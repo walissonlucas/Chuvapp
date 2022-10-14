@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Feed</title>
+</head>
+<body>
+    <div>
+        <header>
+            <div class="head">
+                <div class="img">
+                    <img src="../Logo.png" alt="">
+                </div>
+                <nav id="nav" class style="height: 80px; width: 150px;">
+                    <button id="btn-menu">
+                        <span id="hamburguer"></span>
+                    </button>
+                    <ul id="list">
+                        <div class="minibox">
+                            <div id="usuario">nome</div>
+                            <div id="phone">phone</div>
+                        </div>
+                        <div class="minibox1">
+                            <li><a href="">Cadastrar propriedades</a></li>
+                            <li><a href="">Minhas propriedades</a></li>
+                            <li><a href="">Ajuda</a></li>
+                        </div>
+                        <div class="minibox2">
+                            <li><a href="">Sair</a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="feed">
+                <div id="box-feed">
+                    <iframe src="https://feed.mikle.com/widget/v2/157106/?preloader-text=Loading" 
+                        height="272px" 
+                        width="100%" 
+                        class="fw-iframe" 
+                        scrolling="no" 
+                        frameborder="0">
+                    </iframe>
+                </div>
+                <div id="box-feed1">
+                    <iframe src="https://feed.mikle.com/widget/v2/157109/?preloader-text=Loading" 
+                        height="300px" 
+                        width="100%" 
+                        class="fw-iframe" 
+                        scrolling="" 
+                        frameborder="0">
+                    </iframe>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        const menuMobile = document.getElementById('btn-menu');
+
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+
+        menuMobile.addEventListener('click', toggleMenu);
+
+    </script>
+</body>
+</html>

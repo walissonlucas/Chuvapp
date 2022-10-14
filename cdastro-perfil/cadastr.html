@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de propriedade</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+        * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box; 
+           font-family: 'Inter', sans-serif;
+        }
+        @media (min-width:200px) and (max-width:450px) {
+            body {
+                height: 100vh;
+                width: 100vw;
+                background-color: #E5E5E5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            img {
+                border-radius: 50%;
+                margin-top: 300px;
+            }
+            .box{
+                background-color: white;
+                height: 1200px;
+                width: 300px;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0px 8px 18px rgb(165, 165, 165);
+                margin-top: -300px;
+                margin-left: 30px;
+            }
+            textarea {
+                background-color: #eee;
+                border-radius: 5px;
+                border: none;
+                margin: 10px 10px 10px 14px;
+            }
+            input{
+                padding: 12px 70px 12px 6px;
+                background-color: #eee;
+                border-radius: 5px;
+                border: none;
+                margin: 10px 10px 10px 14px;
+            }
+            label {
+                margin-left: 15px;
+            }
+            h1{
+                font-size: 16px;
+                padding: 20px;
+            }
+            .text {
+                margin-left: 65px;
+            }
+            #button{
+                background-color: #3E80B2;
+                color: white;
+                font-weight: bold;
+                padding-left: 100px;
+                padding-right: 100px;
+                cursor: pointer;
+                margin-left: 8px;
+            }
+            footer {
+                height: 30px;
+                font-size: 30px;
+                margin-left: 20px;
+            }
+        }
+        
+        @media (min-width:500px) and (max-width:2000px) {
+            body {
+            height: 100vh;
+            width: 100vw;
+            background-color: #E5E5E5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            }
+            textarea {
+                    background-color: #eee;
+                    border-radius: 5px;
+                    border: none;
+                    margin: 10px 10px 10px 20px;
+                }
+            img {
+                border-radius: 50%;
+                margin-top: -800px;
+                width: 1800px;
+            }
+            .box{
+                background-color: white;
+                height: 1400px;
+                width: 320px;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0px 8px 18px rgb(165, 165, 165);
+                margin-top: -400px;
+            }
+            input{
+                padding: 12px 80px 12px 8px;
+                background-color: #eee;
+                border-radius: 5px;
+                border: none;
+                margin: 10px 10px 10px 25px;
+            }
+            label {
+                margin-left: 20px;
+            }
+            h1{
+                font-size: 18px;
+                padding: 20px;
+            }
+            
+            .text {
+                margin-left: 70px;
+            }
+            #button{
+                background-color: #3E80B2;
+                color: white;
+                font-weight: bold;
+                padding-left: 109px;
+                padding-right: 109px;
+                cursor: pointer;
+                margin-left: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <img src="img-ceu.png" alt="">
+    <div class="box">
+        <form action="">
+            <h1>CADASTRO DE PROPRIEDADE</h1>
+            <label for="">Descrição</label><br>
+                <textarea name="descricao" id="descricao" cols="35" rows="8"></textarea>
+            <h1 class="text">LOCALIZAÇÃO</h1>
+            <label for="">Endereço</label><br>
+                <input type="text" name="" id=""><br>
+            <label for="">CEP</label><br>
+                <input type="text" name="" id=""><br>
+            <label for="">Estado</label><br>
+                <input type="text" name="" id=""><br>
+            <label for="">Cidade</label><br>
+                <input type="text" name="" id=""><br>
+            <label for="">Área (hectares)</label><br>
+                <input type="text" name="" id=""><br>
+            <label for="t-area"> Tamanho da área em há
+                <input type="number" id="t-area" name="t-area">
+            </label>   <br> 
+            <h1 class="text">PLUVIÔMETRO</h1>
+            <label for="">Quantidade</label><br>
+                <input type="number" name="" id=""><br>
+            <label for="">Localização</label><br>
+                <input type="text" name="" id=""><br>
+            <label for="">Nome da Área/talhão</label><br>
+                <input type="text" name="" id=""><br><br>
+            <input type="submit" name="button" id="button" value="Cadastrar">   
+        </form>
+    </div>
+    <footer>____________________</footer>
+</body>
+</html>

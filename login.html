@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-chuvapp</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(to top, #eee, #538cb8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            height: 480px;
+            min-height: 440px;
+            max-height: 500px;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        .logo{
+            height: 180px;
+            width: 180px;
+            border-radius: 50px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } 
+        img{
+            height: 100px;
+            width: 100px;
+        }
+        .box{
+            background-color: white;
+            height: 300px;
+            width: 350px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 8px 18px rgb(165, 165, 165);
+        }
+        input{
+            padding: 12px 80px 12px 8px;
+            background-color: #eee;
+            border-radius: 5px;
+            border: none;
+            margin: 10px;
+        }
+        label{
+            padding: 12px;
+            margin: 10px;
+            margin-left: 0px;
+        }
+        #button{
+            background-color: #3E80B2;
+            color: white;
+            font-weight: bold;
+            padding-left: 109px;
+            padding-right: 109px;
+            cursor: pointer;
+        }
+        #remind-login{
+            height: 20px;
+            width: 20px;
+            padding-top: 20px;
+            vertical-align:sub;
+        }
+        #check{
+            padding: 5px;
+            margin-left: -10px;
+        }
+        #remenber{
+            padding: 5px;
+        }
+        footer{
+            padding-top: 100px;
+            padding-left: 60px;
+        }
+
+        @media (min-width:300px) and (max-width:800px) {
+            body{
+            height: 900px;
+            width: 100vw;
+            background: linear-gradient(to top, #eee, #538cb8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+            .box{
+            background-color: white;
+            height: 300px;
+            width: 300px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 8px 18px rgb(165, 165, 165);
+            }
+            label{
+            padding: 12px;
+            margin: 10px;
+            margin-left: 0px;
+            }
+            #button{
+                background-color: #3E80B2;
+                color: white;
+                font-weight: bold;
+                padding-left: 109px;
+                padding-right: 109px;
+                cursor: pointer;
+                margin-left: 15px;
+            }
+            #remind-login{
+                height: 20px;
+                width: 20px;
+                padding-top: 20px;
+                vertical-align:sub;
+            }
+            #check{
+                padding: 5px;
+                margin-left: -10px;
+            }
+            #remenber{
+                padding: 5px;
+                font-size: 12px;
+            }
+            footer{
+                padding-top: 100px;
+                padding-left: 30px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <div class="logo">
+                <img src="Logo.png" alt="">
+            </div>
+        </header>
+        <main>
+            <div class="box">
+                <form action="">
+                    <label for="email">E-mail</label><br>
+                    <input type="text" name="email" id="email" placeholder="usuario@gmail.com"><br>
+                    <label for="senha">Senha</label><br>
+                    <input type="password" name="senha" id="senha" placeholder="Senha"><br>
+                    <input type="submit" value="Entrar" id="button"><br>
+                    <input type="checkbox" id="remind-login">
+                    <label id="check" for="remind-login">Lembrar login</label> <a id="remenber" href="">Esqueceu a senha?</a>
+                </form>            
+            </div>
+        </main>    
+        <footer>
+            <span>Não tem uma conta?</span>
+            <a href="">Cadastre-se</a>
+        </footer>
+    </div>
+</body>
+</html>

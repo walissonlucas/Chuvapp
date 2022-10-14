@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Perfil</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        body{
+            height: 100vh 100%;
+            width: 100vw;
+            background-color: #E5E5E5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: #f5f5f5;
+            height: 1030px;
+            width: 450px;
+            border-radius: 20px;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 8px 18px rgb(165, 165, 165);
+        }
+        h1{
+            margin-left: 120px;
+            padding-top: 30px;
+            padding-bottom: 0;
+            font-size: 18px;
+        }
+        input {
+            padding: 12px 80px 12px 8px;
+            background-color: #eee;
+            border-radius: 5px;
+            border: none;
+            margin: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .minibox input{
+            margin-left: 30px;
+        }
+        .minibox label{
+            margin-left: 30px;
+        }
+        
+        .minibox1 {
+            margin-top: 5px;
+            margin-left: -378px;
+            margin-top: 60px;
+        }
+
+        #button{
+            margin-left: 95px;
+        }
+        
+        fieldset{
+            border: none;
+            float: left;
+            display: flex;
+            margin-left: -20px;
+            height: 60px;
+        }
+
+        #l-city{
+            margin-top: -20px;
+            padding: 5px;
+            margin-left: 45px;
+            height: 30px;
+        }
+        #l-uf{
+            margin-top: -20px;
+            padding: 5px;
+            margin-left: 225px;
+            height: 30px;
+            margin-right:-279px;
+
+        }
+        #city{
+            margin-left: -35px;
+        }
+        #button{
+            background-color: #3E80B2;
+            color: white;
+            font-weight: bold;
+            padding-left: 175px;
+            padding-right: 175px;
+            cursor: pointer;
+            margin-left: 30px;
+        }
+        .minibox{
+           margin-top: 5px;
+        }
+        img{
+            margin-left: 8px;
+            margin-top: 8px;
+        }
+        .img{
+            background-color: #FFFFFF;
+            width: 100px;
+            height: 100px;
+            margin-left: 170px;
+            border-radius: 35px;
+            position: relative;
+            margin-bottom: -15px;
+            box-shadow: 0px 8px 18px rgb(165, 165, 165);
+        }
+        #remind-login{
+            height: 20px;
+            width: 20px;
+            padding-top: 20px;
+            vertical-align:sub;
+            margin-left: 30px;
+        }
+        #check{
+            padding: 5px;
+            margin-left: 0px;
+        }
+        #estado {
+            width: 70px;
+            height: 40px;
+            margin-top: 10px;
+            border-radius: 5px;
+            background-color: #eee;
+            border: 0;
+        }
+        .grupo {
+            margin-left: 30px;
+        }
+
+        @media (min-width:250px) and (max-width:450px) {
+            body{
+                height: 100vh;
+                width: 100vw;
+                background-color: #E5E5E5;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+            }
+            .box{
+                background-color: #f5f5f5;
+                height: 980px;
+                width: 280px;
+                border-radius: 20px;
+                box-shadow: 0px 8px 18px rgb(165, 165, 165);
+                margin-left: -5px;
+            }
+            h1{
+                margin-left: 80px;
+                padding-top: 25px;
+                padding-bottom: 0;
+                font-size: 16px;
+            }
+            input, select{
+                padding: 10px 8px 10px 0px;
+                background-color: #eee;
+                border-radius: 5px;
+                border: none;
+                margin: 10px;
+                justify-content: center;
+                align-items: center;
+                margin-left: 5px;
+            }
+            #button {
+                font-weight: bold;
+                padding-left: 92px;
+                padding-right: 92px;
+            }
+            img{
+                margin-left: 7px;
+                margin-top: 6px;
+            }
+            .img{
+                background-color: #FFFFFF;
+                width: 100px;
+                height: 100px;
+                margin-left: 83px;
+                border-radius: 35px;
+                position: relative;
+                margin-top: 300PX;
+                margin-bottom: -10px;
+                box-shadow: 0px 8px 18px rgb(165, 165, 165);
+            }
+            #l-uf {
+                margin-left: 115px;
+            }
+            #l-city {
+                margin-left: 40px;
+            }
+            #estado {
+                width: 50px;
+                height: 40px;
+            }
+            #city{
+                margin-left: 78px;
+                height: 40px;
+                width: 150px;
+            }
+            .minibox{
+                margin-top: 5px;
+                margin-left: -5px;
+            }
+            fieldset{
+                margin-right: -25px;
+                height: 60px;
+            }
+            .minibox1 {
+                margin-top: 5px;
+                margin-left: -255px;
+                margin-top: 60px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="img">
+            <img src="persion-circle.svg" alt="">
+        </div>
+        <form action="">
+            <div class="box">
+                <h1>CRIE SEU PERFIL</h1><br>
+                <div class="minibox">
+                    <label for="nome">Nome</label><br>
+                        <input type="text" name="nome" id="nome" ><br>
+                    <label for="sobrenome">Sobrenome</label><br>
+                        <input type="text" name="sobrenome" id="sobrenome"><br>
+                    <label for="email">E-mail</label><br>
+                        <input type="text" name="email" id="email"><br>
+                    <label for="phone">Telefone</label><br>
+                        <input type="tel" name="phone" id="phone"><br>
+                    <label for="date">Data de nascimento</label><br>
+                        <input type="date" name="date" id="date"><br>
+                    <div>
+                        <label for="">Gênero</label> <br>
+                        <label for="">
+                            <input type="radio" name="gênero" value="Masculino"> Masculino
+                        </label> <br>
+                        <label for="">
+                            <input type="radio" name="gênero" value="Feminino"> Feminino
+                        </label> <br>
+                        <label for="">
+                            <input type="radio" name="gênero" value="Não-Binário"> Não-Binário
+                        </label> <br>
+                    </div>
+                    <label for="cep">CEP</label><br>
+                        <input type="text" name="cep" id="cep"><br><br>
+                </div>
+                <fieldset>    
+                    <label id="l-city" for="city">Cidade</label><label id="l-uf" for="uf">UF</label><br><br>
+                        <input type="text" name="city" id="city">
+                        <select id="estado" name="estado">
+                            <option value="" data-default disabled selected></option>
+                            <option value="Acre">AC</option>
+                            <option value="Alagoas">AL</option>
+                            <option value="Amapá">AP</option>
+                            <option value="Amazonas">AM</option>
+                            <option value="Bahia">BH</option>
+                            <option value="Ceará">CE</option>
+                            <option value="Distrito Federal">DF</option>
+                            <option value="Espírito Santo">ES</option>
+                            <option value="Goiás">GO</option>
+                            <option value="Maranhão">MA</option>
+                            <option value="Mato Grosso">MT</option>
+                            <option value="Mato Grosso do Sul">MS</option>
+                            <option value="Minas Gerais">MG</option>
+                            <option value="Pará">PR</option>
+                            <option value="Paraíba">PB</option>
+                            <option value="Paraná">PR</option>
+                            <option value="Pernanbuco">PE</option>
+                            <option value="Piauí">PI</option>
+                            <option value="Rio de Janeiro">RJ</option>
+                            <option value="Rio Grande do Norte">RN</option>
+                            <option value="Rio Grande do Sul">RS</option>
+                            <option value="Rondônia">RO</option>
+                            <option value="Roraima">RR</option>
+                            <option value="Santa Catarina">SC</option>
+                            <option value="São Paulo">SP</option>
+                            <option value="Sergipe">SE</option>
+                            <option value="Tocantins">TO</option>
+                        </select
+                </fieldset>
+                <div class="minibox1">
+                    <label class="grupo" for="senha">Senha</label><br>
+                        <input type="password" name="senha" id="senha" class="grupo"><br>
+                    <label class="grupo" for="rep-senha">Repetir senha</label><br>
+                        <input type="password" name="rep-senha" id="rep-senha" class="grupo"><br>
+                    <input type="submit" name="button" id="button" value="Entrar"><br>
+                    <input type="checkbox" id="remind-login">
+                    <label id="check" for="remind-login">Lembrar login</label> 
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <script>
+        $("#cep").focusout(function(){
+			//Início do Comando AJAX
+			$.ajax({
+				//O campo URL diz o caminho de onde virá os dados
+				//É importante concatenar o valor digitado no CEP
+				url: 'https://viacep.com.br/ws/'+$(this).val()+'/json/unicode/',
+				//Aqui você deve preencher o tipo de dados que será lido,
+				//no caso, estamos lendo JSON.
+				dataType: 'json',
+				//SUCESS é referente a função que será executada caso
+				//ele consiga ler a fonte de dados com sucesso.
+				//O parâmetro dentro da função se refere ao nome da variável
+				//que você vai dar para ler esse objeto.
+				success: function(resposta){
+					//Agora basta definir os valores que você deseja preencher
+					//automaticamente nos campos acima.
+					$("#city").val(resposta.localidade);
+				}
+			});
+		});
+    </script>
+</body>
+</html>

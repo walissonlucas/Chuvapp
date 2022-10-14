@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação de senha</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        } 
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: #E5E5E5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .text{
+            display: flex;
+            padding-bottom: 40px;
+            margin-top: -20px;
+            margin-left: -20px;
+            font-size: 15px;
+        }
+        .box{
+            background-color: white;
+            height: 190px;
+            width: 300px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 8px 18px rgb(165, 165, 165);
+        }
+        #email{
+            padding: 12px 80px 12px 8px;
+            background-color: #eee;
+            border-radius: 5px;
+            border: none;
+            margin: 10px;
+            margin-left: 13px;
+        }
+        label{
+            padding: 12px;
+            margin: 10px;
+            margin-left: 0px;
+        }
+        #button{
+            background-color: #3E80B2;
+            color: white;
+            font-weight: bold;
+            padding-left: 109px;
+            padding-right: 109px;
+            cursor: pointer;
+            padding: 12px 106px 12px;
+            border-radius: 5px;
+            margin-left: 13px;
+        }
+        .button{
+            background-color: #3E80B2;
+            color: white;
+            font-weight: bold;
+            padding-left: 109px;
+            padding-right: 109px;
+            cursor: pointer;
+            padding: 12px 106px 12px;
+            border-radius: 5px;
+            margin-left: -10px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="text">
+        <h1>Recuperação de senha</h1>
+    </div>
+    <div class="box">
+        <form action="">
+            <label for="email">E-mail</label><br>
+            <input type="text" name="email" id="email" placeholder="usuario@gmail.com"><br>
+            <input type="submit" value="Enviar" id="button"><br>
+        </form>   
+    </div>
+
+</body>
+</html>
